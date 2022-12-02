@@ -14,10 +14,12 @@
 /** SCROLL BAR */
 body::-webkit-scrollbar {
   width: 8px;
+  background-color: rgb(247, 165, 198);
+
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #F7CA37;
+  background-color: #f7224d !important;
   border-radius: 50px;
 }
 

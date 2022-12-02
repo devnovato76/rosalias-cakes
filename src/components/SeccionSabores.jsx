@@ -1,14 +1,57 @@
+import { motion } from "framer-motion";
+import { useRef } from "react";
+
 import "../SeccionSabores.css";
 
+const variantsSabores = {
+  hidden: { opacity: 0 },
+  whileInView: {
+    opacity: 1,
+    transition: {
+      duration: 1.5,
+      ease: "easeInOut",
+      delay: 1,
+      type: "spring",
+      stiffness: 40,
+    },
+  },
+  viewport: {
+    once: true,
+  },
+};
+const variantsSaboresBtn = {
+  hidden: { opacity: 0 },
+  whileInView: {
+    opacity: 1,
+    transition: {
+      duration: 1,
+      ease: "easeInOut",
+      delay: 1,
+      type: "spring",
+      stiffness: 40,
+    },
+  },
+  viewport: {
+    once: true,
+  },
+};
+
 export const SeccionSabores = () => {
+  //const scrollRef = useRef(null);
   return (
-    <section className="sabores">
+    <section className="sabores" id="sabores">
       <div className="grid">
         <div className="span6 background"></div>
 
         <div className="span6">
           <div className="text-content lateral">
-            <h1>NUESTROS SABORES</h1>
+            <motion.h1
+              initial="hidden"
+              whileInView="whileInView"
+              variants={variantsSabores}
+            >
+              NUESTROS SABORES
+            </motion.h1>
             <h3>¡Frescos y sabrosos!</h3>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis
@@ -16,7 +59,14 @@ export const SeccionSabores = () => {
               similique repellat praesentium tenetur non sint expedita itaque
               voluptatem aperiam a ut fugiat!
             </p>
-            <button className="btn dark">Menú</button>
+            <motion.button
+              className="btn dark"
+              initial="hidden"
+              whileInView="whileInView"
+              variants={variantsSaboresBtn}
+            >
+              Menú
+            </motion.button>
           </div>
         </div>
       </div>

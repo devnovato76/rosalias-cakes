@@ -83,7 +83,7 @@ export const Footer = () => {
 
       {/*<!-- Footer copy -->*/}
       <div className="copy">
-        <p>© 2021. All Rights Reserved</p>
+        <p>© 2022. All Rights Reserved</p>
       </div>
     </>
   );
