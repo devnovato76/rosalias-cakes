@@ -1,13 +1,13 @@
-import { useState } from "react";
+{/*import { useState } from "react";
 import Slider from "react-slick";
 import { Modal } from "./Modal";
 import "../Modal.css";
 import "../Slider.css";
 
-/*import astronaut from "./assets/astronaut.png";
+import astronaut from "./assets/astronaut.png";
 import celebrating from "./assets/celebrating.png";
 import education from "./assets/education.png";
-import taken from "./assets/taken.png";*/
+import taken from "./assets/taken.png";
 import image1 from "../assets/image1.jpg";
 import image4 from "../assets/image4.jpg";
 import image5 from "../assets/image5.jpg";

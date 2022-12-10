@@ -1,5 +1,5 @@
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { useRef } from "react";
 
 import "../SeccionSabores.css";
 
@@ -59,14 +59,16 @@ export const SeccionSabores = () => {
               similique repellat praesentium tenetur non sint expedita itaque
               voluptatem aperiam a ut fugiat!
             </p>
-            <motion.button
-              className="btn dark"
-              initial="hidden"
-              whileInView="whileInView"
-              variants={variantsSaboresBtn}
-            >
-              Menú
-            </motion.button>
+            <Link to={"personalizada"}>
+              <motion.button
+                className="btn dark"
+                initial="hidden"
+                whileInView="whileInView"
+                variants={variantsSaboresBtn}
+              >
+                Menú
+              </motion.button>
+            </Link>
           </div>
         </div>
       </div>

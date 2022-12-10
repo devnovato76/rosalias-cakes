@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "../Footer.css";
 
 export const Footer = () => {
@@ -67,9 +68,9 @@ export const Footer = () => {
             </div>
 
             <div className="sociales">
-              <a href="#" className="fab fa-facebook-f"></a>
-              <a href="#" className="fab fa-twitter"></a>
-              <a href="#" className="fab fa-instagram"></a>
+              <NavLink to="#" className="fab fa-facebook-f"></NavLink>
+              <NavLink to="#" className="fab fa-twitter"></NavLink>
+              <NavLink to="#" className="fab fa-instagram"></NavLink>
             </div>
           </div>
 
